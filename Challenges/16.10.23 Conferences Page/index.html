@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <a class="menu" id="menu-icon"><i class="ti ti-menu-2"></i></a>
+      <nav class="left">
+        <ul class="navbar">
+          <li><a href="#">Discover</a></li>
+          <li><a href="#">Live</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#" class="active">Conferences</a></li>
+        </ul>
+      </nav>
+      <nav id="sidebar">
+        <ul class="sidebar">
+          <li><a href="#">Discover</a></li>
+          <li><a href="#">Live</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#" class="active">Conferences</a></li>
+        </ul>
+      </nav>
+      <nav class="right">
+        <ul class="navbar">
+          <li><a href="#" class="log">Log In</a></li>
+          <li><a href="#" class="GS">Get Started</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <ul class="breadcrumb">
+        <li><a href="#">Conferences</a></li>
+        <span id="seperator">/</span>
+        <li><a class="active">Bergen</a></li>
+      </ul>
+      <h2>Conferences in Bergen</h2>
+      <nav id="filter">
+        <ul class="filter">
+          <li><a class="active">ALL</a></li>
+          <li><a href="#">TODAY</a></li>
+          <li><a href="#">THIS WEEK</a></li>
+          <li><a href="#">JUNE</a></li>
+          <li><a href="#">JULY</a></li>
+        </ul>
+      </nav>
+      <nav id="morefilter">
+        <ul class="morefilter">
+          <li><a class="active">ALL</a></li>
+          <li><a class="more-filter-text">More Filters</a></li>
+          <div class="dropdown-container">
+            <li><a class="dropdown">TODAY</a></li>
+            <li><a class="dropdown">THIS WEEK</a></li>
+            <li><a class="dropdown">JUNE</a></li>
+            <li><a class="dropdown">JULY</a></li>
+          </div>
+        </ul>
+      </nav>
+      <div class="container">
+        <div class="conference">
+          <article class="conf">
+            <h4 class="info">Mon, 22 - Fri, 26 Jun 2020 • Bergen</h4>
+            <h2 class="confTitle">
+              International Conference on Test and Proofs (TAP)
+            </h2>
+          </article>
+          <article class="conf">
+            <h4 class="info">Mon, 22 - Fri, 26 Jun 2020 • Bergen</h4>
+            <h2 class="confTitle">
+              European Conference on Modelling Foundations
+            </h2>
+          </article>
+
+          <article class="conf">
+            <h4 class="info">
+              <span class="postponed">Postponed </span>• Bergen
+            </h4>
+            <h2 class="confTitle">Conference on Graph Transformation</h2>
+          </article>
+
+          <article class="conf">
+            <h4 class="info">Mon, 22 - Fri, 26 Jun 2020 • Bergen</h4>
+            <h2 class="confTitle">
+              International Conference on Tests and Proofs (TAP)
+            </h2>
+          </article>
+
+          <article class="conf">
+            <h4 class="info"><span class="postponed">Postponed </span></h4>
+            <h2 class="confTitle">Scandinavian Logic Symposium (SLSS)</h2>
+          </article>
+        </div>
+        <ul class="discover">
+          <li id="discover">
+            <h1>Discover</h1>
+          </li>
+
+          <li>
+            <a href="">
+              <h3><i class="ti ti-box"></i>Business Intelligence</h3>
+            </a>
+            <div class="details">
+              Historical, current and predicive views of business operations.
+            </div>
+          </li>
+          <li>
+            <a href="">
+              <h3><i class="ti ti-shopping-cart"></i>Commerce</h3>
+            </a>
+            <div class="details">
+              Systems, goods and services, small and large scale.
+            </div>
+          </li>
+          <li>
+            <a href="">
+              <h3><i class="ti ti-users"></i>Human Resources</h3>
+            </a>
+            <div class="details">
+              About people who make up the workforce of an organisation.
+            </div>
+          </li>
+          <li>
+            <a href="">
+              <h3><i class="ti ti-archive"></i>Internet of Things</h3>
+            </a>
+            <div class="details">
+              Human-to-human and human-to-computer interaction
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

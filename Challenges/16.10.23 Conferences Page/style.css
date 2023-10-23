@@ -1,0 +1,343 @@
+/* Add your CSS styles here */
+
+:root {
+  --bg: #f5f5f5;
+  --text: #2f2f2f;
+  --text2: #acacac;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system;
+  transition: all 400ms ease-in-out;
+  transition-property: all;
+  scroll-behavior: smooth;
+}
+
+a {
+  all: unset;
+  transition: 400ms ease-in-out;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+  transition: 400ms ease-in-out;
+}
+
+a:hover {
+  color: var(--text);
+}
+
+header {
+  border-bottom: 0.5px solid var(--text2);
+}
+
+header,
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  color: var(--text2);
+  font-weight: 500;
+  z-index: 1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+}
+
+.navbar a {
+  margin-left: 15px;
+}
+
+.active {
+  color: var(--text);
+  font-weight: 600;
+  transition: 400ms ease-in-out;
+}
+
+.active:hover {
+  color: var(--text2);
+}
+
+.GS {
+  color: var(--bg);
+  background-color: var(--text);
+  outline: 1px solid var(--text);
+  padding: 1.5em 3.5em;
+  display: inline-block;
+  transition: 400ms ease-in-out;
+}
+
+.GS:hover {
+  background-color: var(--text2);
+  outline: 1px solid var(--text2);
+  color: var(--text);
+}
+
+.menu {
+  display: none;
+}
+
+#sidebar {
+  display: none;
+  transition: 400ms ease-in-out;
+}
+
+.sidebar {
+  display: none;
+  transition: 400ms ease-in-out;
+}
+
+main {
+  margin: 15px;
+  z-index: 0;
+}
+
+ul.breadcrumb {
+  justify-content: left;
+  gap: 0.625rem;
+}
+
+ul.breadcrumb li {
+  font-size: 16px;
+  border: 1px solid var(--text2);
+  border-radius: 30px;
+  padding: 10px;
+}
+
+#seperator {
+  color: var(--text);
+  font-size: 18px;
+}
+
+.filter {
+  font-size: 15px;
+  justify-content: left;
+  display: flex;
+  transition: 400ms ease-in-out;
+  padding-top: 8px;
+  margin: 0;
+  gap: 0.625rem;
+}
+
+.filter a {
+  padding: 8px;
+  border-radius: 8px;
+  color: var(--text);
+  background-color: transparent;
+  transition: 400ms ease-in-out;
+}
+
+.filter .active {
+  background-color: var(--text);
+  color: var(--bg);
+}
+
+.filter .active:hover {
+  background-color: var(--text2);
+  color: var(--text);
+}
+
+.filter a:hover {
+  background-color: var(--text);
+  color: var(--bg);
+}
+
+.filter li {
+  height: 36px;
+  line-height: 36px;
+}
+
+#morefilter {
+  display: none;
+}
+
+#more-filter-text {
+  display: none;
+}
+
+.dropdown-container {
+  position: fixed;
+  display: block;
+  flex-direction: column;
+  background-color: var(--bg);
+  text-align: left;
+  justify-content: left;
+  margin-top: 255px;
+  left: 8px;
+}
+
+.dropdown-container li {
+  display: block;
+  padding: 8px;
+  text-align: left;
+}
+
+.conference {
+  width: 60%;
+  margin-top: 10px;
+}
+
+.conf {
+  padding-top: 2rem;
+  border-bottom: 0.5px solid var(--text2);
+}
+
+.info {
+  color: var(--text2);
+  font-weight: normal;
+}
+
+.postponed {
+  color: red;
+}
+
+.discover {
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin-left: auto;
+  text-align: left;
+  align-items: start;
+  border: 1px solid var(--text);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.discover li a h3,
+.discover li .details {
+  padding: 10px;
+  transition: 400ms ease-in-out;
+  width: 100%;
+}
+
+.discover li:hover a h3,
+.discover li:hover .details {
+  background-color: var(--text);
+  color: var(--bg);
+}
+
+.discover .ti {
+  font-size: 1.8rem;
+  margin-right: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: block;
+    font-size: 1.8rem;
+    margin: 15px;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .sidebar {
+    position: fixed;
+    display: block;
+    flex-direction: column;
+    background-color: var(--bg);
+    text-align: left;
+    justify-content: left;
+    margin-top: 38px;
+    left: 0;
+    font-size: 1.8rem;
+    width: 300px;
+  }
+
+  .sidebar a {
+    margin: 15px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .conference {
+    width: 100%;
+  }
+
+  .discover {
+    margin: 0 auto;
+    border: 1px solid var(--text2);
+    border-radius: 10px;
+    padding: 1rem;
+    display: block;
+    width: 80%;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  header .GS {
+    display: block;
+    padding: 1.2em;
+  }
+
+  #filter {
+    display: none;
+  }
+
+  #morefilter a {
+    padding: 8px;
+    border-radius: 8px;
+    color: var(--text2);
+    background-color: transparent;
+    transition: 400ms ease-in-out;
+    display: inline-block;
+  }
+
+  #morefilter {
+    display: inline-block;
+    flex-direction: column;
+    background-color: var(--bg);
+    margin-top: 10px;
+  }
+
+  #morefilter .active {
+    background-color: var(--text);
+    color: var(--bg);
+  }
+
+  #morefilter .active:hover {
+    background-color: var(--text2);
+    color: var(--text);
+  }
+
+  #more-filter-text {
+    display: block;
+  }
+
+  a {
+    all: unset;
+    transition: 400ms ease-in-out;
+    cursor: pointer;
+  }
+
+  #morefilter a:hover {
+    color: var(--text);
+  }
+
+  .dropdown-container {
+    display: none;
+  }
+}
