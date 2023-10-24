@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a class="title">
+        Send us a message
+        <i class="ti ti-minus"></i>
+      </a>
+      <form action="">
+        <label class="inputs">
+          YOUR NAME
+          <input type="text" placeholder="Name" required />
+        </label>
+        <label class="input">
+          EMAIL ADRESS
+          <input type="text" placeholder="Email Adress" required />
+        </label>
+        <label class="input">
+          what can we do for you ?
+          <textarea
+            name="message"
+            placeholder="Type your message here"></textarea>
+        </label>
+        <label class="file">
+          Attachments
+          <input type="file" id="file" />
+          <span class="fileBtn">Upload Files</span>
+        </label>
+        <a class="submit" type="submit">Send Message</a>
+      </form>
+    </div>
+  </body>
+</html>
