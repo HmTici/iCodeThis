@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
   ressourcesLink.addEventListener('click', function () {
     if (ressourcesGrid.style.display === 'none') {
       ressourcesGrid.style.display = 'grid';
+      ressourcesLink.classList.add('active');
       icon.classList.add('rotated');
     } else {
       ressourcesGrid.style.display = 'none';
