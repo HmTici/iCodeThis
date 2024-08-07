@@ -1,4 +1,4 @@
-# iCodeThis
+# iCodeThis Challenges
 
 (almost)Daily Front-end Practice  
 
